@@ -1,0 +1,40 @@
+/* títulos ===================================== */
+h2 {
+
+    margin-top: 3.2rem;
+    margin-bottom:0.8rem;
+    color: var var(--color-blue);
+    font-weight: normal;
+}
+
+/* links and buttons  ===================================== */
+
+a {
+
+    color: #3DD705;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+a:hover {
+
+    color: #00c03a;
+    text-decoration: none;
+
+}
+
+.button.new {
+
+    display:inline-block;
+    margin-bottom: 0.8rem;
+}
+
+/*Balanço da página ========================== */
+
+#balance {
+
+margin-top: -8rem;
+font-weight: bold;
+transition: 0.5s all;
+
+}

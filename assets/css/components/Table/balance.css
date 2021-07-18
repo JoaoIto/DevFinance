@@ -1,0 +1,26 @@
+td.description {
+
+    color:var(--color-blue);
+
+}
+
+td.income {
+
+    color: #00c050;
+}
+
+td.income:hover {
+
+    font-weight:bold;
+
+}
+
+td.expense {
+
+    color: #E92929;
+}
+
+td.expense:hover {
+
+    font-weight:bold;
+}

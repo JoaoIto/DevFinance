@@ -1,0 +1,46 @@
+/* Estilização base de todos os cards e elementos próprios */
+.card {
+
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius:0.25rem;
+    margin-bottom:2rem;
+    transition: 0.5s all;
+    
+}
+
+.card:hover {
+
+    transform: scale(1.02);
+}
+
+.card h3 {
+
+font-weight: normal;
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.valores-cards {
+
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.card.color {
+
+background: #39d600;
+color: white;
+font-weight: bold;
+transition: 0.5s all;
+}
+
+.card.color:hover {
+
+    transform: scale(1.02);
+}

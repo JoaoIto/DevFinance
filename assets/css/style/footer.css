@@ -1,0 +1,18 @@
+/*Rodapé da página ========================== */
+
+footer p {
+
+    color: var(--color-blue);
+    font-weight: bold;
+    text-align: center;
+       
+}
+
+#rodape {
+
+   font-weight:bold;
+   text-align:center;
+   padding: 4rem 0 2rem;
+   color: var(--color-blue);
+   opacity: 5;
+}
