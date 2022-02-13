@@ -1,10 +1,3 @@
-This is a project maked by me, but together with Rocktseat.com !
+# Dev Finance 💰
 
-The tecnology used in this project:
-
-- HTML5
-- CSS3
-- JavaScript
-
-Used a organization architecture based on, folders separation in a diferents themes a program language.
-Dev Finance$ V 1.0
+Este projeto faz parte da formação do Discover disponibilizado pela [Rocketseat.com](http://rocktseat.com.br)! E que vem de um projeto de finanças, na qual são contadas as finanças de uma certa pessoa, em que ela conta seus gastos e ganhos e mostra em uma tabela...
