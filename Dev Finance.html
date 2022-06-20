@@ -10,16 +10,17 @@
   <link rel="shortcut icon" href="./assets/img/money.ico" />
   <link rel="stylesheet" href="./assets/css/style/reset.css" />
   <link rel="stylesheet" href="./assets/css/style/root.css" />
-  <link rel="stylesheet" href="./assets/css/style/response.css" />
+  <link rel="stylesheet" href="./assets/css/style/basic.css">
+  <!-- CSS styles components -->
+  <link rel="stylesheet" href="./assets/css/components/Header/style.css">
+  <link rel="stylesheet" href="./assets/css/components/Header/logo.css">
   <link rel="stylesheet" href="./assets/css/components/Cards/style.css" />
-  <link rel="stylesheet" href="./assets/css/components/Cards/expense.css" />
-  <link rel="stylesheet" href="./assets/css/components/Cards/income.css" />
+  <link rel="stylesheet" href="./assets/css/components/Cards/total.css">
   <link rel="stylesheet" href="./assets/css/components/Table/style.css" />
-  <link rel="stylesheet" href="./assets/css/components/Table/balance.css" />
-  <link rel="stylesheet" href="./assets/css/components/Table/transanction.css" />
   <link rel="stylesheet" href="./assets/css/components/Modal/modal.css" />
   <link rel="stylesheet" href="./assets/css/components/Modal/form.css" />
   <link rel="stylesheet" href="./assets/css/components/Modal/button.css" />
+  <link rel="stylesheet" href="./assets/css/components/Footer/style.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -29,13 +30,96 @@
 
 <body>
   <header>
-    <h1 id="logo" alt="Título do site de Finanças, Dev Finance$">
+    <h1 class="logo" alt="Título do site de Finanças, Dev Finance$">
       $ Dev.Finance
     </h1>
   </header>
+  <main>
+    <section class="cards">
+      <div class="card" id="income">
+        <legend class="title-card">Entradas <img src="./assets/img/income.svg" alt="icon income"></legend>
+        <h3 class="value-card">R$ 5.000,00</h3>
+      </div>
 
-  <script src="./assets/js/index.js"></script>
-  <script src="./assets/js/app.js"></script>
+      <div class="card" id="expense">
+        <legend class="title-card">Saídas <img src="./assets/img/expense.svg" alt="icon expense"></legend>
+        <h3 class="value-card">R$ 2.000,00</h3>
+      </div>
+
+      <div class="card" id="total">
+        <legend class="title-card">Total <img src="./assets/img/total.svg" alt="icon total"></legend>
+        <h3 class="value-card">R$ 5.000,00</h3>
+      </div>
+    </section>
+    <button id="newTransition">+ New Transition</button>
+    <section class="table">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="description">App web</td>
+            <td class="income">R$ 2000,00</td>
+            <td>31/04/2021</td>
+            <td><img src="./assets/img/minus.svg" alt=""></td>
+          </tr>
+          <tr>
+            <td class="description">Internet</td>
+            <td class="expense">- R$ 200,00</td>
+            <td>12/09/2020</td>
+            <td><img src="./assets/img/minus.svg" alt=""></td>
+          </tr>
+          <tr>
+            <td class="description">Luz</td>
+            <td class="expense">- R$ 700,00</td>
+            <td>17/06/2020</td>
+            <td><img src="./assets/img/minus.svg" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <div class="modal-overlay">
+    <div class="modal">
+      <div id="form">
+        <form action="" onsubmit="Form.submit(event)">
+          <div class="input-group">
+            <label class="sr-only" for="description">Descrição</label>
+            <input type="text" id="description" name="description" placeholder="Descrição" />
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="amount">Valor</label>
+            <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00" />
+            <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+          </div>
+
+          <div class="input-group">
+            <label class="sr-only" for="date">Data</label>
+            <input type="date" id="date" name="date" />
+          </div>
+
+          <div class="input-group actions">
+            <a onclick="Modal.close()" href="#" class="button cancel">Cancelar</a>
+            <button>Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h2 class="logo">$ Dev Finance</h2>
+    <span>Site feito por <a class="spam" id="JoaoIto" href="https://github.com/JoaoIto">JoaoIto</a> e idealizado por <a
+        class="spam" id="rocketseat" href="https://rocketseat.com.br/">Rocketseat</a></span>
+  </footer>
+  <script src="./assets/js/app/modal_open.js"></script>
+  <script src="./assets/js/app/modal_close.js"></script>
 </body>
 
 </html>

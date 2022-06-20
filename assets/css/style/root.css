@@ -1,30 +1,9 @@
 /*Central ========================== */
 :root {
-
     --color-blue: #22357c;
     --footer-blue: #06195d;
     --back-blue-green: #195b79;
-    --green: #49aa26;
+    --green: #388d19;
     --light-green: #3dd705;
     --red: #e92929;
-}
-
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-html {
-
-    font-size: 93.75%;
-
-}
-
-body {
-    height: 100%;
-    background: #f0f2f5;
-    font-family: "Poppins", sans-serif;
 }

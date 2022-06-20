@@ -1,0 +1,9 @@
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo::first-letter{
+    color: var(--light-green);
+}

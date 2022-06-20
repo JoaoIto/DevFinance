@@ -1,5 +1,4 @@
 .modal-overlay {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +15,6 @@
     visibility: visible;
 }
 .modal {
-
     background-color: #F0F2F5;
     padding: 2.4rem;
     position: relative;

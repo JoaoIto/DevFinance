@@ -1,39 +1,17 @@
 button {
-
-    width: 100%;
-    height: 50px;
-    font-weight: 600;
-    padding: none;
+    background: transparent;
     border: none;
-    color: white;
-    background: var(--green);
-    border-radius: .25rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.5s all;
+    font-size: 17px;
+    color: var(--light-green);
+    margin: 30px;
+    transition: 0.25s all;
 }
 
-button:hover {
-
-    transform: scale(1.1);
-    background: var(--light-green);
+button:hover{
+    color: #79e651;
 }
-
-.button.cancel {
-
-    color: var(--red);
-    font-weight: 600;
-    border: 2px var(--red) solid;
-    border-radius: .25rem;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.6;
-    transition: 0.5s all;
-}
-
-.button.cancel:hover {
-
-    transform: scale(1.1);
-    opacity: 1;
+button:active{
+    color: #33b105;
 }
